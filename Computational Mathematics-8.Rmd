@@ -1,0 +1,63 @@
+---
+output:
+  pdf_document: default
+  html_document: default
+---
+
+## Data 605 - Assignment 8
+
+**Hazal Gunduz**
+
+**Exercise 11 (pg 303).** A company buys 100 lightbulbs, each of which has an exponential lifetime of 1000 hours. What is the expected time for the first of these bulbs to burn out? (See Exercise 10.)
+
+**Exercise 10.** Let $X_{1}$, $X_{2}$, . . . , $X_{n}$ be n independent random variables each of which has an exponential density with mean µ. Let M be the minimum value of the $X_{j}$. Show that the density for M is exponential with mean $\frac{µ}{n}$. Hint: Use cumulative distribution functions.
+
+From Exercise 10, we know that the density for M is exponential with mean $\frac{µ}{n}$ 
+
+μ = 1000 hours and n = 100
+
+M = $\frac{µ}{n}$ = 1000/100 = 10
+
+The expected time for the first of these bulbs to burn out is 10 hours
+
+**Exercise 14 (pg 303).** Assume that $X_{1}$ and $X_{2}$ are independent random variables, each having an exponential density with parameter λ. Show that Z = $X_{1}$ − $X_{2}$ has density   $f_{z}(z)$ = $\frac{1}{2}λe^{−λ|z|}$
+
+$X_{1}$ and $X_{2}$ are independent random variables and both have exponential function:
+
+$f(X_{1})$ = $λe^{−λx_{1}}$ 
+
+$f(X_{2})$ = $λe^{−λx_{2}}$
+  
+Probability density of of $X_{1}$ and $X_{2}$ is : $λe^{−λ(x_1+x_{2})}$
+
+Substitution to get the joint density of Z and $X_{2}$ is : $λ^2e^{−λ(z+2x_{2})}$
+
+If z is positive; $f_{z}(z)$ = $\int_{0}^{\infty}$ $λ^2e^{−λ(z+2x_{2})}$ dx = $\frac{λ}{2}e^{−λz}$
+
+If z is negative; $f_{z}(z)$ = $\int_{-z}^{\infty}$ $λ^2e^{−λ(z+2x_{2})}$ dx = $\frac{λ}{2}e^{λz}$ 
+
+$f_{z}(z)$ = $\frac{1}{2}λe^{λ|z|}$
+
+**Exercise 1 (pg 320-321).** Let X be a continuous random variable with mean µ = 10 and variance $σ^2$ = 100/3. Using Chebyshev’s Inequality, find an upper bound for the following probabilities.
+
+Chebyshev’s Inequality is : P(|X − μ| ≥ ϵ) ≤ $\frac{σ^2}{ϵ^2}$
+
+**(a)** P(|X − 10| ≥ 2)
+
+ϵ = 2, P(|X − 10| ≥ 2) ≤ $\frac{100/3}{2^2}$ = $\frac{25}{3}$ = 8.333
+
+**(b)** P(|X − 10| ≥ 5)
+
+ϵ = 5, P(|X − 10| ≥ 5) ≤ $\frac{100/3}{5^2}$ = $\frac{4}{3}$ = 1.333
+
+**(c)** P(|X − 10| ≥ 9)
+
+ϵ = 9, P(|X − 10| ≥ 9) ≤ $\frac{100/3}{9^2}$ = $\frac{100}{243}$ = 0.411
+
+**(d)** P(|X − 10| ≥ 20)
+
+ϵ = 20, P(|X - 10| ≥ 20) ≤ $\frac{100/3}{20^2}$ = $\frac{1}{12}$ = 0.083
+
+Rpubs =>  https://rpubs.com/gunduzhazal/1017591
+
+
